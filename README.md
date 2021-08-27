@@ -2,7 +2,7 @@
 
 `react-leaflet-heatmap-layer` provides a simple `<HeatmapLayer />` component for creating a heatmap layer in a `react-leaflet` map.
 
-![A screenshot of a heatmap on a leaflet map](../master/screenshot.jpg?raw=true)
+![A screenshot of a heatmap on a leaflet map](./screenshot.jpg?raw=true)
 
 ## Usage
 
