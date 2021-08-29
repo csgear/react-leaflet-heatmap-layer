@@ -26,7 +26,7 @@ const HeatmapLayer = (<Point>() =>
         intensityExtractor,
         points,
         aggregateType,
-        useLocalExtrema = true,
+        useLocalExtrema = false,
       },
     ) {
       // if (props.fitBoundsOnUpdate) {

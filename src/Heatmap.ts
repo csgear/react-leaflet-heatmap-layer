@@ -156,11 +156,16 @@ export default class Heatmap<Point> extends L.Layer {
   private __el?: HTMLCanvasElement
   private __heatmap?: SimpleHeat
   private _frame?: number | null
+  // @ts-ignore
   options: HeatmapOptions<Point>
 
   constructor(options?: HeatmapOptions<Point>) {
     super(options)
-    this.options = L.Util.setOptions(this, options)
+    if(options)
+    {
+        const target = Object.assign({}, options) ;
+        this.options = target ;
+    }
   }
 
   private get _heatmap() {
